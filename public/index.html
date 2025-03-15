@@ -1,0 +1,52 @@
+<!-- Frontend Starts -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Proxy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="vanta-bg"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+        // Net background from Vanta JS
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xffffff,
+            backgroundColor: 0x0
+        })
+    </script>
+    <div class="container">
+        <div class="box">
+            <br>
+            <br>
+            <h1>Ghost Proxy</h1>
+            <p class="desc">Surf the web like a ghost... nothing will get in the way of that.</p>
+            <br>
+            <form action="typescript_action-send" id="uv-form" class="uv-form">
+                <input id="uv-address" type="text" class="search" maxlength="1000" placeholder="Search the untracable way..." required>
+                <br><br>
+            </form>
+            <div class="credits">
+                <p>
+                    Credits: <br>
+                        Frontend: <a href="https://zarcotech.xyz" target="_blank">Zarcotech</a>
+                        <br><br>
+                        Backend: <a href="https://dyamuh.com" target="_blank">dyamuh</a>
+                </p>
+            </div>
+        </div>     
+    </div>
+</body>
+</html>
